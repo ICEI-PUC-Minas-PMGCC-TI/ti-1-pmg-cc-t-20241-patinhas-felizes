@@ -1,0 +1,132 @@
+/* Body */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(patinha.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Cabecalho */
+
+header {
+  background-color: #54644B;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Para garantir que o cabeçalho ainda ocupe a largura total */
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-align: 10px;
+  margin-left: 30px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+/* Conteudo principal */
+
+.div-titulo {
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+.titulo {
+  margin: 0px;
+  padding: 0px;
+}
+
+.fill_green
+{
+  background-color: #A4B79A;
+  padding: 30px 30px;
+  border-radius: 6px;
+}
+
+.fill_green_cadastro_maior
+{
+  background-color: #A4B79A;
+  padding: 30px 50px;
+  border-radius: 50px;
+  border: 1px solid #000000; 
+  max-width: 1000px; 
+  margin:0 auto; 
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fill_green_cadastro
+{
+  background-color: #C7D9BF;
+  padding: 50px;
+  border-radius: 6px;
+  border: 1px solid #000000; 
+  max-width: 600px; 
+  margin: 0 auto; 
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.label-box {
+  display: block;
+  padding: 0.375rem 0.75rem; 
+  border: 1px solid #000000; 
+  border-radius: 0.25rem; 
+  background-color: #54644b;
+  color: white; 
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 25px;  
+}
+
+.btn{
+  margin-left: 10px; 
+  margin-top: 10px;
+}
+
+.container
+{
+  margin: 9% 0;
+  margin: 0 auto;
+}
+
+.caixa {
+  padding: 15px;
+}
+
+.imagem {
+  margin-bottom: 10px;
+}
+
+/* Rodape */
+
+footer {
+  background-color: #54644b;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+  width: 100%;
+  position: absolute;
+  bottom:0%;
+}
