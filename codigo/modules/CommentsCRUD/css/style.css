@@ -1,0 +1,282 @@
+/* --- BODY --- */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /*backgound-image: url();*/
+}
+  
+/* --- CABEÇALHO --- */
+  
+header {
+    background-color: #54644B;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav {
+    display: flex;
+}
+  
+nav a {
+    color: white;
+    text-decoration: none;
+    text-align: 10px;
+    margin-left: 30px;
+}
+  
+nav a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* --- CONTEÚDO PRINCIPAL --- */
+  
+.fill-green
+{
+    background-color: #A4B79A;
+    padding: 30px 30px;
+    border-radius: 6px;
+}
+
+/* Div que contém o título e a seção de comentários */
+
+#commentsContainer
+{
+    margin: 2% 5%;
+    padding: 0px;
+}
+
+/* Div que contém a linha do título */
+
+#commentsTitleRow
+{
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+/* h1 do título */
+
+#title
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Div que contém a linha da seção dos comentários */
+
+#commentsHolderRow
+{
+    margin: 0px;
+    padding: 2%;    
+}
+
+/* Div que contém os comentários mostrados e o input de novos comentários */
+
+#commentsSectionContainer
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Div que contém os comentários a serem mostrados */
+
+#commentsShowDiv
+{
+    margin: 0px;
+    padding: 2%;    
+}
+
+/* Comentários */
+
+.comment 
+{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 5px 10px;    
+    border-style: solid;
+    border-color: #54644B;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.commentUsername 
+{
+    margin: 0px;
+    padding: 0px;
+    font-size: 150%;
+    font-weight: 500;
+}
+
+.commentContent
+{
+    margin-left: 10px;
+    padding: 0px;
+    font-size: 150%;
+}
+
+.col-11 
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.commentP 
+{
+    margin: 0px;
+    padding: 5px 7px;
+}
+
+#commentsHolderRow 
+{
+    margin: 0% 3%;
+}
+
+.contentHolder 
+{
+    display: inline-block;
+}
+
+.commentEdit 
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.formEdit
+{
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    margin: 0px;
+    padding: 0px;
+}
+
+.campoUpdateComment
+{
+    display: inline-block;
+    margin: 0px;
+    margin-top: 3px;
+    padding: 8px;
+    border: 0px;
+    border-radius: 6px;
+}
+
+.btnEdit
+{
+    display: inline-block;
+    background-color: #54644B;
+    color: white;
+    margin: 3px 5px 0px 5px;
+    padding: 8px 4px;
+    border: 0;
+    border-radius: 6px;
+}
+
+.btnCancelEdit
+{
+    display: inline-block;
+    background-color: rgba(255, 0, 0, 0.664);
+    color: white;
+    margin: 3px 0px 0px 0px;
+    padding: 8px 8px;
+    border: 0;
+    border-radius: 6px;
+}
+
+/* Div que contém o formulário de comentários novos */
+
+#commentsFormDiv
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Formulário a ser enviado */
+
+#form
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Input do comentário */
+
+#campoComment
+{
+    margin: 0px;
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 6px;
+    width: 88%;
+}
+
+/* Botão para enviar o formulário */
+
+#btnPublicar
+{
+    background-color: #54644B;
+    color: white;
+    margin: 0px 0px 0px 3%;
+    padding: 8px 7px;
+    border: 0;
+    border-radius: 6px;
+    width: 8%;
+}
+
+/* Dropdown Button */
+.btnDropdown {
+    background-color: #54644B;
+    color: white;
+    margin: 5px 0px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+}
+  
+/* Mouse sobre o Dropdown Buton */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+  
+/* Div que contém o botão Dropdown e os botões a serem mostrados */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+  
+/* Div que contém o conteúdo a ser mostrado - Escondido por padrão */
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/* Botões dentro do Dropdown Button */
+.dropdownContent button {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    min-width: 100%;
+    border: none;
+}
+  
+/* Mudar a cor dos botões escondidos ao passar o mouse */
+.dropdownContent button:hover {
+    background-color: #ddd;
+}
+  
+/* Classe para mostrar os botões escondidos */
+.show {
+    display:block;
+}
