@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patinhas Felizes</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="menu">
+    <h1>Home</h1>
+    <nav>
+      <a href="#">Encontrei um Animal</a>
+      <a href="#">Quero Ajudar</a>
+      <a href="#">Sobre nós</a>
+      <a href="#">Sobre a ONG</a>
+      <button id="botaoPerfil">
+        <img id="iconePerfil" src="https://i.pinimg.com/originals/4f/73/3b/4f733b83724e86f43c759de191f7e9fc.jpg" alt="">
+      </button>
+    </nav>
+  </header>
+
+  <div id="filtro-container">
+      <div class="filter-container">
+        <label for="genero">Gênero:</label>
+        <select id="genero">
+            <option value="T">Todos</option>
+            <option value="M">Macho</option>
+            <option value="F">Fêmea</option>
+        </select>
+
+        <label for="tamanho">Porte:</label>
+        <select id="tamanho">
+            <option value="T">Todos</option>
+            <option value="P">Pequeno</option>
+            <option value="M">Médio</option>
+            <option value="G">Grande</option>
+        </select>
+
+        <label for="especie">Espécie:</label>
+        <select id="especie">
+            <option value="T">Todos</option>
+            <option value="CA">Cachorro</option>
+            <option value="GA">Gato</option>
+            <option value="CO">Coelho</option>
+            <option value="RO">Roedores</option>
+        </select>
+
+        <button id="botaoModalMatch">
+          <img id="iconeMatch" src="imgs/download-removebg-preview.png" alt="">
+        </button>
+
+        <button id="botaoModalMatch2">
+          <img id="iconeMatch" src="imgs/download-removebg-preview.png" alt="">
+        </button>
+    </div>
+  </div>
+
+  <div id="cards">
+    <div class="card" id="1">
+      <img src="imgs/jasmin.jpg" alt="">
+      <div>
+        <h1>Jasmin</h1>
+        <img class="sexo" src="imgs/iconeFeminino.png" alt="Feminino">
+        <h2>Linda, carinhosa e companheira! O que mais você precisa?</h2>
+        <button class="botaoModal">Saiba Mais</button>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <img src="imgs/lua.jpg" alt="">
+      <div>
+        <h1>Lua</h1>
+        <img class="sexo" src="imgs/iconeFeminino.png" alt="Feminino">
+        <h2>Calma, paciente e atenciosa! Alguém viu uma gatinha?</h2>
+        <button class="botaoModal">Saiba Mais</button>
+      </div>
+
+    </div>
+
+    <div class="card" id="cardMasculino">
+      <img src="imgs/pietro.webp" alt="">
+      <div>
+        <h1>Otto</h1>
+        <img class="sexo" src="imgs/iconeMasculino.png" alt="Feminino">
+        <h2>Brincalhão, divertido e alegre! Está pronto para a aventura?</h2>
+        <button class="botaoModal">Saiba Mais</button>
+      </div>
+
+    </div>
+  </div>
+    <div id="modais">
+        <div class="modal">
+          <header id="cabecalhoModal">
+            <h1>Vamos Adotar?</h1>
+            <span class="fechar-modal"> × </span>
+          </header>
+          <div class="corpo_modal">
+            <section class="flexPerfil">
+
+              <div>
+                  <img id="avatarPrincipal" src="imgs/jasmin.jpg" alt="">
+              </div>
+              <div class="informacoes">
+                  <div id="nomeAutor">
+                      <p>Jasmin</p>
+                  </div>
+                  <p><strong>Idade:</strong>  5 meses</p>
+                  <p><strong>Raça:</strong>  Pembroke Welsh Corgi</p>
+                  <p><strong>Vacinação:</strong> Gripe canina; Giárdia; Antirrábica; Leishmaniose </p>
+                  <p><strong>Castrado:</strong>  Não</p>
+                  <div id="descricao">
+                    <h4>História:</h4>
+                      <p>
+                        Jasmin é uma cadela adorável, resgatada das ruas de Belo Horizonte por uma gentil alma que a
+                        levou para um abrigo de animais. Com seus olhos brilhantes e uma energia contagiante, Jasmin logo
+                        se tornou a favorita entre os voluntários do abrigo. 
+  
+                        Apesar de ter sido resgatada, Jasmin não perdeu sua alegria de viver. Ela é uma cachorrinha agitada,
+                        sempre pronta para brincar e explorar novos lugares. Seu coração transborda amor e gratidão, e ela
+                        anseia por encontrar uma família para compartilhar todo esse amor. 
+                      </p>
+                  </div>
+                  <button class="button-44">Adotar!</button>
+              </div>
+          </section>
+          </div>
+        </div>
+      </div>
+      <div class="mascara"></div>
+
+      <div id="modaisMatch">
+        <div class="modalMatch">
+          <header id="cabecalhoModal">
+            <h1>Vamos Adotar?</h1>
+            <span class="fechar-modal-Match"> × </span>
+          </header>
+          <div class="corpo_modal">
+            
+            <section class="section_Modal_Match">
+              <img id="imgMatch" src="imgs/jasmin.jpg" alt="">
+                <p id="slideDireita"> > </p>
+                <p id="slideEsquerda"> < </p>
+              <section class="informacoesModalMatch">
+                <p id="nomeMatch">Jasmin</p>
+                <p id="descricaoMatch">Calma, paciente e atenciosa! Alguém viu uma gatinha?</p>
+              </section>
+            </section>
+            <div class="flexIconesMatch">
+              <img id="iconeLike" src="imgs/iconCheck.png" alt="">
+              <img id="iconeX" src="imgs/iconX.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mascara"></div>
+
+      <div id="modaisMatch2">
+        <div class="modalMatch2">
+          <header id="cabecalhoModal">
+            <h1>Vamos Adotar?</h1>
+            <span class="fechar-modal-Match2"> × </span>
+          </header>
+          <div class="corpo_modal">
+            <div id="textoResultadoMatch">
+              <h1>Deu Match!</h1>
+            </div>
+            <section class="section_Modal_Match_Resultado">
+              <img id="avatarPrincipalMatchAnimal" src="imgs/jasmin.jpg" alt="">
+              <section class="informacoesModalMatchResultado">
+                <img id="avatarPrincipalMatchUsuario" src="imgs/jasmin.jpg" alt="">
+              </section>
+            </section>
+            <button class="button-match" id="adotarMatch">Adotar!</button>
+            <button class="button-match" id="voltarMatch">Voltar</button>
+          </div>
+        </div>
+      </div>
+      <div class="mascara"></div>
+
+
+      <footer class="footer-estilizado">
+        <div>
+            <p>&copy; <span id="data"></span> Patinhas Felizes</p>
+            <p>Conexão entre ONGs e Adotantes!</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="javaScript.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>
