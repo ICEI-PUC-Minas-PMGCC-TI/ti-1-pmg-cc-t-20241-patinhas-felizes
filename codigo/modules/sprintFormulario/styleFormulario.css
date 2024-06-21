@@ -1,0 +1,170 @@
+/* Body */
+*{
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(patinha.jpeg);
+  }
+  
+  /* Cabecalho */
+  
+  header {
+    background-color: #54644B;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    text-align: 10px;
+    margin-left: 30px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  
+  /* Conteudo principal */
+  
+  .div-titulo {
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+  
+  .titulo {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .fill_green
+  {
+    background-color: #A4B79A;
+    padding: 30px 30px;
+    border-radius: 6px;
+  }
+  .container
+  {
+    margin: 9% 0;
+  }
+  
+  .caixa {
+    padding: 15px;
+  }
+  
+  .imagem {
+    margin-bottom: 10px;
+  }
+  
+  /* Rodape */
+  
+  footer {
+    background-color: #54644B;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    width: 100%;
+    position: absolute;
+    bottom:0%;
+  }
+  
+  /* Formulario */
+  
+  div.row {
+    border-radius: 10px;
+  
+  }
+  
+  .proximo {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: flex-end;
+    width: 150px;
+    height: 48px;
+    border-radius: 20px;
+    transition: 200ms;
+  }
+  
+  .enviar {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-end;
+    width: 150px;
+    height: 48px;
+    border-radius: 20px;
+    transition: 200ms;
+  }
+  
+  #resposta {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    width: 300px;
+    height: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #resposta:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .pergunta label {
+    font-family: Arial, sans-serif; /* Substitua Arial pelo estilo de fonte desejado */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+  }
+  
+  .botao-cadastro-container {
+    width: 100%;
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .botao-cadastro {
+    background-color: #54634b;
+    color: white;
+    width: 150px;
+    height: 48px;
+    border-radius: 20px;
+    transition: 200ms;
+    cursor: pointer;
+  }
+  
+  .botao-cadastro:hover {
+    background-color: rgb(0, 0, 0);
+  }
