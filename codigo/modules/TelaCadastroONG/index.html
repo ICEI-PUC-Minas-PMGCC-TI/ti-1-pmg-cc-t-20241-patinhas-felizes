@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cadastro ONG</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  
+  <header>
+    <h1>Cadastro ONG</h1>
+  </header>
+
+  <body>
+    <main class="AC_pagina-container">
+      <div class="AC_formularios-container">
+        <div class="AC_formulario-circle">
+          <input id="AC_logo-input" type="file" />
+          <label for="AC_logo-input">Inserir logo</label>
+        </div>
+        <div class="AC_formulario-box">
+          <label>CNPJ</label>
+          <input class="AC_input-text" id="cnpj-input" />
+          <label>Endereço</label>
+          <input class="AC_input-text" id="endereco-input" />
+          <label>Telefone</label>
+          <input class="AC_input-text" id="telefone-input" />
+          <label>E-mail</label>
+          <input class="AC_input-text" id="email-input" />
+        </div>
+        <div class="AC_formulario-box">
+          <label>Nome</label>
+          <input class="AC_input-text" id="nome-input" />
+          <label>Senha</label>
+          <input class="AC_input-text" id="senha-input" />
+          <label>Confirmar Senha</label>
+          <input class="AC_input-text" id="confirmar-senha-input" />
+          <div id="confirmar-senha-msg-erro">Senhas informadas diferentes</div>
+        </div>
+      </div>
+      <div class="AC_botao-cadastro-container">
+        <button onclick="AC_botaoCadastrarOnClick()" class="AC_botao-cadastro">Cadastrar</button>
+      </div>
+    </main>
+    <script src="index.js"></script>
+    <footer>
+      <p>&copy; rodapé</p>
+    </footer>
+  </body>
+</html>

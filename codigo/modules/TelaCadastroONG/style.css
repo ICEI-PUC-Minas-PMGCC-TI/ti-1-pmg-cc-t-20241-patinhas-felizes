@@ -1,0 +1,128 @@
+
+header {
+  background-color: #54644B;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: url(Design\ sem\ nome.png);
+}
+
+.button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+footer {
+  background-color: #54644B;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+  width: 100%;
+  position: absolute;
+  bottom:0%;
+}
+
+.AC_pagina-container {
+  background-color: #a5b79b;
+  height: 50vh;
+  width: 60vw;
+  padding: 36px;
+  position: absolute;
+  left: calc(20vw - 36px);
+  top: calc(25vh - 36px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px black solid;
+  border-radius: 12px;
+}
+
+.AC_botao-cadastro-container {
+  width: 100%;
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.AC_botao-cadastro {
+  background-color: #54634b;
+  color: white;
+  width: 150px;
+  height: 48px;
+  border-radius: 20px;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.AC_botao-cadastro:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.AC_formularios-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.AC_formulario-box {
+  background-color: #c9d8bf;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border: 3px black solid;
+  border-radius: 12px;
+}
+
+.AC_formulario-circle {
+  background-color: #c9d8bf;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 200ms;
+  border: 3px black solid;
+}
+
+.AC_formulario-circle:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+#confirmar-senha-msg-erro {
+  display: none;
+  color: red;
+}
+
+#logo-input {
+  display: none;
+  cursor: pointer;
+}
+
+.AC_input-text {
+  margin-bottom: 4px;
+  border: none;
+  height: 24px;
+}
