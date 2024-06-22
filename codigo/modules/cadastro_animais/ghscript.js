@@ -13,6 +13,20 @@ function submitForm() {
         tags: formData.get('tags').split(',').map(tag => tag.trim())
     };
 
-    console.log(animalData);
-    // Aqui você pode adicionar a lógica para enviar os dados para o backend ou processá-los como necessário.
+    // Enviar os dados para o JSON Server usando fetch
+    fetch('http://localhost:3000/animals', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(animalData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Animal adicionado com sucesso:', data);
+        loadAnimals(); // Recarregar a lista de animais
+    })
+    .catch(error => {
+        console.error('Erro ao adicionar animal:', error);
+    });
 }
